@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -24,9 +26,7 @@ main {
 }
 .productos {
     display: grid;
-    /* Crea columnas automáticas de mínimo 250px y máximo lo que quepa */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1-fr));
-    /* Espacio de separación de 24px entre tarjeta y tarjeta */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 24px; 
     width: 100%;
     margin-top: 30px;
