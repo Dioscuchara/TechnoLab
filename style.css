@@ -42,7 +42,13 @@ h2 {
     text-decoration: none;
     border-radius: 6px;
     font-weight: bold;
+    
+    /* SOLUCIÓN: Añade esta línea para centrar el texto perfectamente */
+    text-align: center; 
+    
+    transition: background-color 0.2s ease;
 }
+
 
 .boton:hover {
     background-color: #d97706;
