@@ -25,19 +25,30 @@ main {
     width: 100%;
 }
 .productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 24px; 
     width: 100%;
     margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+    .productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 .tarjeta {
-    margin-bottom: 0; /* Quitamos el margen viejo para que el 'gap' de arriba controle el espacio */
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Alinea los botones perfectamente abajo */
+    justify-content: space-between;
 }
+
 
 
 h2 {
