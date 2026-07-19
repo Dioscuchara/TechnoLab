@@ -224,3 +224,88 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+/* SECCIÓN DE CONTACTO */
+.seccion-contacto {
+    max-width: 600px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.seccion-contacto p {
+    color: #94a3b8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* FORMULARIO ESTILIZADO */
+.formulario {
+    background: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.grupo-input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-input label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* INPUTS Y TEXTAREA OSCUROS */
+.grupo-input input, 
+.grupo-input textarea {
+    background-color: #0b0f19;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.grupo-input input:focus, 
+.grupo-input textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+.grupo-input textarea {
+    height: 120px;
+    resize: vertical; /* Permite estirarlo hacia abajo pero no hacia los lados */
+}
+
+/* BOTÓN DE ENVIAR */
+.boton-formulario {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    transition: all 0.3s ease;
+}
+
+.boton-formulario:hover {
+    background: #2563eb;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35);
+    transform: translateY(-1px);
+}
