@@ -291,7 +291,6 @@ footer {
     resize: vertical; /* Permite estirarlo hacia abajo pero no hacia los lados */
 }
 
-/* BOTÓN DE ENVIAR */
 .boton-formulario {
     background: #3b82f6;
     color: white;
@@ -306,8 +305,59 @@ footer {
     transition: all 0.3s ease;
 }
 
-.boton-formulario:hover {
-    background: #2563eb;
-    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.35);
-    transform: translateY(-1px);
+.contenedor-busqueda {
+    width: 100%;
+    max-width: 550px;
+    margin: 30px auto 30px auto; /* 30px exactos por arriba y 30px exactos por abajo */
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Deja un espacio limpio y fijo entre la lupa exterior y la barra */
+}
+
+.lupa-svg {
+    width: 20px;          /* Tamaño fino y elegante */
+    height: 20px;
+    color: #94a3b8;       /* Gris suave Apple por defecto */
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    flex-shrink: 0;       /* Evita que se deforme */
+}
+
+.contenedor-busqueda:focus-within .lupa-svg {
+    opacity: 1;
+    color: #3b82f6;       /* Se ilumina en azul eléctrico al pinchar para escribir */
+    transform: scale(1.05); /* Hace un micro pulso muy sutil y moderno */
+}
+#buscador {
+    width: 100%;
+    background-color: #111827;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 14px 20px; /* Volvemos a un padding normal y limpio porque la lupa ya está fuera */
+    color: white;
+    font-size: 1rem;
+    font-family: inherit;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#buscador:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15), 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #151c2c;
+}
+
+.contenedor-busqueda:focus-within .lupa-minimalista {
+    opacity: 1;
+    border-color: #3b82f6;
+}
+.contenedor-busqueda:focus-within .lupa-minimalista::after {
+    background-color: #3b82f6;
+}
+
+main h2:first-of-type {
+    margin-top: 0px; 
 }
